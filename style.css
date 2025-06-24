@@ -1,0 +1,213 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.4s ease;
+}
+body{
+    background: white;
+    color: black;
+}
+body.dark{
+    background: white;
+    color: black;
+}
+body.dark header,
+body.dark footer{
+    color: #1e1e1e;
+}
+body.dark nav ul li a{
+    color: white;
+}
+body.dark nav ul li a:hover{
+    color: #ffd700;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,#2c3e50, #4ca1af);
+    color: white;
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    gap: 1 rem;
+}
+.logo h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ffd700;
+    width: 0;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color: orange;
+}
+#toggle-theme{
+    background-color: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s;
+}
+#toggle-theme:hover{
+    transform: scale(1.1);
+}
+.hero{
+    padding: 80px 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    background: white;
+    color: black;
+}
+.hero h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.hero .btn{
+    background: #fff;
+    color: #0072ff;
+    text-decoration: none;
+    padding: 6px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+.hero .btn:hover{
+    background: orange;
+    color: white;
+}
+body.dark .hero{
+    background: black;
+    color: white;
+}
+.about{
+    background: white;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 18px;
+    font-weight: 400;
+}
+body.dark .about{
+    background: black;
+    color: white;
+}
+.services{
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+    color: black;
+}
+.services h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card{
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+.card h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 15px;
+}
+body.dark .services{
+    background: black;
+    color: wheat;
+}
+.contact{
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+.contact h2{
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+.contact form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input,
+.contact textarea{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.contact button{
+    padding: 10px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 150px;
+    transition: background 0.3s ease;
+}
+.contact button:hover{
+    background: orange;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
